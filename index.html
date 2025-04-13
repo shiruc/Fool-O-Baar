@@ -1,93 +1,30 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Twist’n’Bloom – Handmade Floral Art</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-  <link rel="icon" href="images/logo.png">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home – Twist’n’Bloom</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
-<body class="bg-gradient-to-br from-pink-100 via-white to-purple-100 text-gray-800">
-  <!-- Navbar -->
-  <header class="flex justify-between items-center p-4 shadow bg-white sticky top-0 z-50">
-    <img src="images/logo.png" alt="Twist’n’Bloom Logo" class="h-12">
-    <nav class="space-x-4">
-      <a href="#home" class="hover:text-pink-600">Home</a>
-      <a href="#about" class="hover:text-pink-600">About</a>
-      <a href="#products" class="hover:text-pink-600">Products</a>
-      <a href="#gallery" class="hover:text-pink-600">Gallery</a>
-      <a href="#contact" class="hover:text-pink-600">Contact</a>
-    </nav>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="images/logo.png" alt="Twist’n’Bloom Logo" style="height: 50px;" />
+    </a>
   </header>
 
-  <!-- Hero Section with 3D -->
-  <section id="home" class="h-screen flex flex-col justify-center items-center text-center px-4">
-    <iframe src="https://my.spline.design/flower3dsceneembeddemo" frameborder="0" width="100%" height="400" class="rounded-xl shadow-xl"></iframe>
-    <h1 class="text-4xl md:text-6xl font-bold mt-8">Twist’n’Bloom</h1>
-    <p class="text-lg mt-4 max-w-xl">Exquisite handmade pipe cleaner flowers & decor crafted with love and creativity.</p>
-    <a href="#products" class="mt-6 px-6 py-3 bg-pink-500 text-white rounded-full shadow hover:bg-pink-600 transition">Explore Products</a>
-  </section>
+  <main class="container">
+    <h1>Welcome to Twist’n’Bloom</h1>
+    <p>
+      Transform your space with our handmade flowers, crafted with love using pipe cleaners.
+    </p>
+    <p>Browse our beautiful collection of floral designs and home décor.</p>
+    <a href="products.html" class="button">Shop Now</a>
+  </main>
 
-  <!-- About Section -->
-  <section id="about" class="py-16 px-6 md:px-20 bg-white text-center">
-    <h2 class="text-3xl font-bold mb-4">About Us</h2>
-    <p class="max-w-3xl mx-auto">Twist’n’Bloom is a homegrown Indian brand turning pipe cleaners into stunning, colorful creations. Every product is a symbol of artistic dedication, perfect for your home or for gifting.</p>
-  </section>
-
-  <!-- Products Section -->
-  <section id="products" class="py-16 px-6 md:px-20">
-    <h2 class="text-3xl font-bold text-center mb-10">Our Products</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition">
-        <img src="images/products/flower1.jpg" alt="Flower 1" class="rounded">
-        <h3 class="mt-2 font-semibold">Rose Twist Bouquet</h3>
-      </div>
-      <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition">
-        <img src="images/products/flower2.jpg" alt="Flower 2" class="rounded">
-        <h3 class="mt-2 font-semibold">Mini Bloom Vase</h3>
-      </div>
-      <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition">
-        <img src="images/products/flower3.jpg" alt="Flower 3" class="rounded">
-        <h3 class="mt-2 font-semibold">Color Pop Stems</h3>
-      </div>
-    </div>
-  </section>
-
-  <!-- Gallery Section -->
-  <section id="gallery" class="py-16 px-6 md:px-20 bg-pink-50">
-    <h2 class="text-3xl font-bold text-center mb-10">Gallery</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <img src="images/gallery/img1.jpg" alt="Gallery Image 1" class="rounded shadow">
-      <img src="images/gallery/img2.jpg" alt="Gallery Image 2" class="rounded shadow">
-      <img src="images/gallery/img3.jpg" alt="Gallery Image 3" class="rounded shadow">
-      <img src="images/gallery/img4.jpg" alt="Gallery Image 4" class="rounded shadow">
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="py-16 px-6 md:px-20 text-center bg-white">
-    <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
-    <p class="mb-4">Want to order or ask something? Reach us through this form or WhatsApp!</p>
-    <form action="https://formspree.io/f/yourformid" method="POST" class="max-w-xl mx-auto grid gap-4">
-      <input type="text" name="name" placeholder="Your Name" required class="p-3 border rounded">
-      <input type="email" name="email" placeholder="Email" required class="p-3 border rounded">
-      <textarea name="message" placeholder="Your Message" rows="4" required class="p-3 border rounded"></textarea>
-      <button type="submit" class="bg-pink-500 text-white py-2 rounded hover:bg-pink-600">Send Message</button>
-    </form>
-    <a href="https://wa.me/917300732344" target="_blank" class="mt-4 inline-block text-green-600 font-bold">Chat on WhatsApp</a>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-pink-100 text-center py-6 text-sm">
-    <p>&copy; 2025 Twist’n’Bloom. Handmade with ❤️ in India.</p>
+  <footer>
+    &copy; 2025 Twist’n’Bloom. All rights reserved.
   </footer>
 </body>
-
 </html>
